@@ -61,7 +61,7 @@ class Lifecycle extends React.Component {
 
     shouldComponentUpdate = () => true;   // shouldComponentUpdate ? (true) -> Continues its working flow as normal : (false) -> Stops the "Re - Render".
 
-    componentWillUnmount = () => alert("Header Deleted by 'UNMOUNT'.");
+    componentWillUnmount = () => console.log("Header Deleted by 'UNMOUNT'.");
 
 }
 

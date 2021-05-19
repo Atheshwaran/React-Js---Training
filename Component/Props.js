@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Lifecycle extends React.Component {
+class Props extends React.Component {
     constructor(props) {
         super(props);
         //this.state = { message: "Welcome", name: "Athesh" }
@@ -15,8 +15,8 @@ class Lifecycle extends React.Component {
 
 }
 
-Lifecycle.defaultProps = { name: "Vijay" };
-Lifecycle.propTypes = {
+Props.defaultProps = { name: "Vijay" };
+Props.propTypes = {
     name: PropTypes.string
     // name : PropTypes.arr
     // name : PropTypes.number
@@ -26,7 +26,7 @@ Lifecycle.propTypes = {
     // name : PropTypes.func
 }
 
-export default Lifecycle;
+export default Props;
 
 
 
