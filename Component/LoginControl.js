@@ -8,16 +8,16 @@ import LogoutButton from './LogoutButton'
 class LoginControl extends React.Component {
   constructor(props) {
     super(props);
-    this.loginClick = this.loginClick.bind(this);
-    this.logoutClick = this.logoutClick.bind(this);
+    this.loginClick = this.loginClick.bind(this);    // Binding 'this' to "this.loginClick"
+    //  this.logoutClick = this.logoutClick.bind(this);
     this.state = { isEmployee: false };
   }
 
-  loginClick() {
+  loginClick() {   // In normal function 'this' reffers globally so, we need bind 'this' to a particular func then only we can access the 'this.setState" here. 
     this.setState({ isEmployee: true });
   }
 
-  logoutClick() {
+  logoutClick = () => {    // In arrow function this is already bounded so here 'this' is founded and 'setState' is done 
     this.setState({ isEmployee: false });
   }
 
