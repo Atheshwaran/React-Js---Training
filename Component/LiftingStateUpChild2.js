@@ -1,0 +1,57 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class LiftingStateUpChild2 extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    addressFun = (e) => {
+        this.props.Address(e.target.value)
+    }
+
+    cityFun = (e) => {
+        this.props.City(e.target.value)
+    }
+
+    stateFun = (e) => {
+        this.props.State(e.target.value)
+    }
+
+    pincodeFun = (e) => {
+        this.props.Pincode(e.target.value)
+    }
+
+    render() {
+        //console.log("child B =================",this.props.status);
+        if (this.props.status === true) {
+            return (<>
+                <h1> Permanent Address :- </h1>
+            Address : <input value={this.props.address} onChange={this.addressFun} />
+            City :  <input value={this.props.city} onChange={this.cityFun} />
+            State :  <input value={this.props.state} onChange={this.stateFun} />
+            Pincode :  <input value={this.props.pincode} onChange={this.pincodeFun} />
+
+            </>)
+        }
+        return <></>;
+    }
+}
+
+
+LiftingStateUpChild2.defaultProps = { address: "", city: "", state: "", pincode: "", status: false };
+
+LiftingStateUpChild2.propTypes = {
+    address: PropTypes.string,
+    city: PropTypes.string,
+    state: PropTypes.string,
+    pincode: PropTypes.string,
+    status: PropTypes.bool,
+    Address: PropTypes.func.isRequired,
+    City: PropTypes.func.isRequired,
+    State: PropTypes.func.isRequired,
+    Pincode: PropTypes.func.isRequired,
+
+}
+
+export default LiftingStateUpChild2;

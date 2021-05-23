@@ -31,9 +31,9 @@ function App() {
         <PresentationalComponent /> <br /> <hr />
         <Reactfragments /> <br /> <hr />
         <ListAndKeys /> <br /> <hr />
-        {/* <Button /> <br /> <hr />
+        <Button /> <br /> <hr />
         <LiftingStateUp /> <br /> <hr />
-        <ForwardRef /> <br /> <hr />
+        {/* <ForwardRef /> <br /> <hr />
         <HoverCounter name='Athesh' />
         <ClickCounter name='Athesh' /> */}
 
