@@ -21,13 +21,13 @@ class Lifecycle extends React.Component {
     }
 
     render() {
-        return <React.Fragment>
+        return <>
             {<h1>{this.state.message} {this.state.name}</h1>}
             <br />
             <button type='button' onClick={this.changeValue}>Click Me</button>
             <button type='button' onClick={this.delteHeader}>Un-Mount</button>
             {console.log("Render called")}
-        </React.Fragment>
+        </>
     }
 
     changeValue = () => this.setState({ message: "Learning... React Life-Cycle" });

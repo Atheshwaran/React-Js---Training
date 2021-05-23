@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function LoginButton(props) {
   return (
@@ -6,6 +7,10 @@ function LoginButton(props) {
       Login
     </button>
   );
+}
+
+LoginButton.propTypes = {
+  onClick: PropTypes.func.isRequired
 }
 
 export default LoginButton;

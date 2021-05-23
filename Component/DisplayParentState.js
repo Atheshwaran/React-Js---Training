@@ -2,10 +2,10 @@
 //  Task 1 :- Change the state of parent and display the parent state using child props
 
 import React from 'react';
-import Task1child from './Task1child';
+import DisplayParentStateChild from './DisplayParentStateChild';
 
 
-class Task1 extends React.Component {
+class DisplayParentState extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -18,11 +18,11 @@ class Task1 extends React.Component {
     render() {
         return (<div>
             <h1> Count :- {this.state.data} </h1>
-            <Task1child data={this.state.data} />
+            <DisplayParentStateChild data={this.state.data} />
             <button onClick={this.increaser} > Counter </button>
         </div>)
     }
 
 }
 
-export default Task1;
+export default DisplayParentState;

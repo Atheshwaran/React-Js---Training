@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ChildDerived extends Component {
 
@@ -23,4 +24,10 @@ class ChildDerived extends Component {
     }
 }
 
+ChildDerived.defaultProps = { name: "Athesh" };
+
+ChildDerived.propTypes = {
+    data: PropTypes.number,
+    data: PropTypes.number.isRequired
+}
 export default ChildDerived

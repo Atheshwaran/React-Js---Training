@@ -7,9 +7,9 @@ Task 2 :- 1) Change parent state from child component using button in child comp
 
 
 import React from 'react';
-import Task2child from './Task2child';
+import ChangeParentStateChild from './ChangeParentStateChild';
 
-class Task2 extends React.Component {
+class ChangeParentState extends React.Component {
     constructor() {
         super();
         this.state = { counter: 0 };
@@ -22,9 +22,12 @@ class Task2 extends React.Component {
 
     render() {
 
-        return <div> <Task2child data={this.state.counter} increase={this.increaser} decrease={this.decreaser} /> </div>
+        return <div>
+            <ChangeParentStateChild data={this.state.counter} increase={this.increaser} decrease={this.decreaser} />
+            <ChangeParentStateChild data={this.state.counter} increase={this.increaser} decrease={this.decreaser} />
+        </div>
 
     }
 }
 
-export default Task2;
+export default ChangeParentState;

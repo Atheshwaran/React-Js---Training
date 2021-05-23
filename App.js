@@ -2,30 +2,41 @@
 import React from 'react';
 import './App.css';
 import LifeCycle from './Component/Lifecycle';
-import PropsExample from './Component/Props';
+import Props from './Component/Props';
 import Derived from './Component/Derived';
-import Task1 from './Component/Task1';
-import Task2 from './Component/Task2';
-import LoginControl from './Component/LoginControl';
+import DisplayParentState from './Component/DisplayParentState';
+import ChangeParentState from './Component/ChangeParentState';
+import ConditionalRendering from './Component/ConditionalRendering';
 import Purecomponent from './Component/Purecomponent';
 import Reactfragments from './Component/Reactfragments';
 import PresentationalComponent from './Component/PresentationalComponent';
-import Task3 from './Component/Task3'
+import ListAndKeys from './Component/ListAndKeys';
+import Button from './Component/Button';
+import LiftingStateUp from './Component/LiftingStateUp';
+import ForwardRef from './Component/ForwardRef';
+import ClickCounter from './Component/ClickCounter'
+import HoverCounter from './Component/HoverCounter'
 
 
 function App() {
 
     return <div>
         <LifeCycle />  <br /> <hr />
-        <PropsExample name="Athesh" />  <br /> <hr />
+        <Props name="Athesh" />  <br /> <hr />
         <Derived />  <br /> <hr />
-        <Task1 /> <br /> <hr />
-        <Task2 /> <br /> <hr />
-        <LoginControl /> <br /> <hr />
-        <Purecomponent/> <br /> <hr />
+        <DisplayParentState /> <br /> <hr />
+        <ChangeParentState /> <br /> <hr />
+        <ConditionalRendering /> <br /> <hr />
+        <Purecomponent /> <br /> <hr />
         <PresentationalComponent /> <br /> <hr />
         <Reactfragments /> <br /> <hr />
-        <Task3 />
+        <ListAndKeys /> <br /> <hr />
+        {/* <Button /> <br /> <hr />
+        <LiftingStateUp /> <br /> <hr />
+        <ForwardRef /> <br /> <hr />
+        <HoverCounter name='Athesh' />
+        <ClickCounter name='Athesh' /> */}
+
     </div>
 }
 

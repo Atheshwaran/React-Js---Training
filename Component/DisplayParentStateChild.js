@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Task1child extends React.Component {
+class DisplayParentStateChild extends React.Component {
     constructor(props) {
         super(props);
         this.state = { name: "Athesh" }
     }
-
 
     render() {
         return <h1>Hello ! {this.props.data}</h1>
@@ -14,9 +13,12 @@ class Task1child extends React.Component {
 
 }
 
-Task1child.defaultProps = { data: 0 };
-Task1child.propTypes = {
-    data: PropTypes.number
+DisplayParentStateChild.defaultProps = { data: 0 };
+
+DisplayParentStateChild.propTypes = {
+    data: PropTypes.number.isRequired
 }
 
-export default Task1child;
+
+
+export default DisplayParentStateChild;

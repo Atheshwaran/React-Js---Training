@@ -5,9 +5,9 @@ import Greetings from './Greetings'
 import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
 
-class LoginControl extends React.Component {
-  constructor(props) {
-    super(props);
+class ConditionalRendering extends React.Component {
+  constructor() {
+    super();
     this.loginClick = this.loginClick.bind(this);    // Binding 'this' to "this.loginClick"
     //  this.logoutClick = this.logoutClick.bind(this);
     this.state = { isEmployee: false };
@@ -40,4 +40,4 @@ class LoginControl extends React.Component {
 }
 
 
-export default LoginControl;
+export default ConditionalRendering;
