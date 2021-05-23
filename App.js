@@ -34,8 +34,8 @@ function App() {
         <Button /> <br /> <hr />
         <LiftingStateUp /> <br /> <hr />
         <ForwardRef /> <br /> <hr />
-        {/* <HoverCounter name='Athesh' />
-        <ClickCounter name='Athesh' /> */}
+        <HoverCounter name='Athesh' />
+        <ClickCounter name='Athesh' />
 
     </div>
 }
