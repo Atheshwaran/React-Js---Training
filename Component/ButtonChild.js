@@ -14,7 +14,7 @@ function ButtonChild(props) {
 ButtonChild.defaultProps = { name: "Athesh" };
 
 ButtonChild.propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
     click: PropTypes.func.isRequired,
     children: PropTypes.array.isRequired
 

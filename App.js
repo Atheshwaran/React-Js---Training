@@ -14,8 +14,9 @@ import ListAndKeys from './Component/ListAndKeys';
 import Button from './Component/Button';
 import LiftingStateUp from './Component/LiftingStateUp';
 import ForwardRef from './Component/ForwardRef';
-import ClickCounter from './Component/ClickCounter'
-import HoverCounter from './Component/HoverCounter'
+import ClickCounter from './Component/ClickCounter';
+import HoverCounter from './Component/HoverCounter';
+import RefsAndDom from './Component/RefsAndDom';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
         <LiftingStateUp /> <br /> <hr />
         <ForwardRef /> <br /> <hr />
         <HoverCounter name='Athesh' />
-        <ClickCounter name='Athesh' />
+        <ClickCounter name='Athesh' /> <br /> <hr />
+        <RefsAndDom /> <br /> <hr />
 
     </div>
 }

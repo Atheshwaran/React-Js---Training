@@ -9,4 +9,8 @@ class HoverCounter extends Component {
 	}
 }
 
+HoverCounter.defaultProps = {count: 0}
+
+HoverCounter.propTypes = { incrementCount : PropTypes.func.isRequired}
+
 export default Hoc(HoverCounter, 5)

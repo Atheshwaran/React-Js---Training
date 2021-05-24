@@ -9,4 +9,8 @@ class ClickCounter extends Component {
 	}
 }
 
+ClickCounter.defaultProps = {count: 0}
+
+ClickCounter.propTypes = { incrementCount : PropTypes.func.isRequired}
+
 export default Hoc(ClickCounter, 2)

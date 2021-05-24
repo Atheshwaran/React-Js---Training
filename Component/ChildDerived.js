@@ -24,10 +24,9 @@ class ChildDerived extends Component {
     }
 }
 
-ChildDerived.defaultProps = { name: "Athesh" };
+ChildDerived.defaultProps = { data: 0};
 
 ChildDerived.propTypes = {
-    data: PropTypes.number,
-    data: PropTypes.number.isRequired
+    data: PropTypes.number
 }
 export default ChildDerived

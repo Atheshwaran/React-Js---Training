@@ -10,7 +10,7 @@ function PresentationalComponentChild(props) {  // Presentational Component
 PresentationalComponentChild.defaultProps = { message: "String" };
 
 PresentationalComponentChild.propTypes = {
-    message: PropTypes.string.isRequired
+    message: PropTypes.string
 }
 
 export default PresentationalComponentChild;

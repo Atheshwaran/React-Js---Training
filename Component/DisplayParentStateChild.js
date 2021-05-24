@@ -16,7 +16,7 @@ class DisplayParentStateChild extends React.Component {
 DisplayParentStateChild.defaultProps = { data: 0 };
 
 DisplayParentStateChild.propTypes = {
-    data: PropTypes.number.isRequired
+    data: PropTypes.number
 }
 
 

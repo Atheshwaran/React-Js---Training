@@ -17,7 +17,7 @@ class ChangeParentStateChild extends React.Component {
 
 ChangeParentStateChild.defaultProps = { data: 0 };
 ChangeParentStateChild.propTypes = {
-    data: PropTypes.number.isRequired,
+    data: PropTypes.number,
     increase: PropTypes.func.isRequired,
     decrease: PropTypes.func.isRequired,
 }

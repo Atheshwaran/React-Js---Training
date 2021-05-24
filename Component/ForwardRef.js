@@ -9,7 +9,7 @@ class ForwardRef extends React.Component {
     }
 
     handleClick = () => {
-        alert("I am from Child Ref");
+        this.inputRef.current.focus();
     };
 
     render() {
