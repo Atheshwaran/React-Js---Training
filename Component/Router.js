@@ -17,7 +17,12 @@ import HoverCounter from './HoverCounter';
 import ClickCounter from './ClickCounter';
 import RefsAndDom from './RefsAndDom';
 import NotFound from './NotFound';
+import ToDoList from './ToDoList';
 
+
+
+// Link -> Has only 'to' property
+//NavLink -> Has (to, exact, activeStyle) property.
 
 function routing() {
 
@@ -40,25 +45,28 @@ function routing() {
                 <li> <NavLink to='/hovercounter' exact activeStyle={{ color: 'Green' }} > HoverCounter </NavLink> </li>
                 <li> <NavLink to='/clickcounter' exact activeStyle={{ color: 'Green' }} > ClickCounter </NavLink> </li>
                 <li> <NavLink to='/refsanddom' exact activeStyle={{ color: 'Green' }} > RefsAndDom </NavLink> </li>
+                <li> <NavLink to='/ToDoList' exact activeStyle={{ color: 'Green' }} > ToDoList </NavLink> </li>
             </ul>
             <Switch>
-            <Route exact path="/" component={LifeCycle} />
-            <Route path="/props" component={Props} />
-            <Route path="/derived" component={Derived} />
-            <Route path="/displayparentstate" component={DisplayParentState} />
-            <Route path="/changeparentstate" component={ChangeParentState} />
-            <Route path="/conditional-rendering" component={ConditionalRendering} />
-            <Route path="/purecomponent" component={Purecomponent} />
-            <Route path="/presentationalcomponent" component={PresentationalComponent} />
-            <Route path="/reactfragments" component={Reactfragments} />
-            <Route path="/listandkeys" component={ListAndKeys} />
-            <Route path="/button" component={Button} />
-            <Route path="/Liftingstateup" component={LiftingStateUp} />
-            <Route path="/forwardref" component={ForwardRef} />
-            <Route path="/hovercounter" component={HoverCounter} />
-            <Route path="/clickcounter" component={ClickCounter} />
-            <Route path="/refsanddom" component={RefsAndDom} />
-            <Route component={NotFound} />
+                
+                <Route path="/props" component={Props} />
+                <Route path="/derived" component={Derived} />
+                <Route path="/displayparentstate" component={DisplayParentState} />
+                <Route path="/changeparentstate" component={ChangeParentState} />
+                <Route path="/conditional-rendering" component={ConditionalRendering} />
+                <Route path="/purecomponent" component={Purecomponent} />
+                <Route path="/presentationalcomponent" component={PresentationalComponent} />
+                <Route path="/reactfragments" component={Reactfragments} />
+                <Route path="/listandkeys" component={ListAndKeys} />
+                <Route path="/button" component={Button} />
+                <Route path="/Liftingstateup" component={LiftingStateUp} />
+                <Route path="/forwardref" component={ForwardRef} />
+                <Route path="/hovercounter" component={HoverCounter} />
+                <Route path="/clickcounter" component={ClickCounter} />
+                <Route path="/refsanddom" component={RefsAndDom} />
+                <Route path="/ToDoList" component={ToDoList} />
+                <Route path="/" component={LifeCycle} />
+                <Route component={NotFound} />
             </Switch>
         </div>
     </Router >)
