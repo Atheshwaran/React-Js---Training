@@ -1,18 +1,16 @@
 import React, { useEffect } from 'react';
-import { incrementA, stateA, wicketA } from '../Actions/Score';
+import { incrementB, stateB, wicketB } from '../Actions/Score';
 import { useSelector, useDispatch } from 'react-redux';
 
-function TeamA(props) {
+function TeamB(props) {
 
     const dispatch = useDispatch();
 
     const state = props.state;
     const setValue = props.change;
     const ballCounter = props.ballsCounter;
-    // let runRate = props.runrate;
 
-    const ballsUsed = useSelector((state) => state.ballsA);
-  
+    const ballsUsed = useSelector((state) => state.ballsB);
 
     let playerName = "";
     let run = "";
@@ -41,9 +39,8 @@ function TeamA(props) {
                     player9: (playerName === "player9") ? { ...prevState.player9, runs: Number(prevState.player9.runs) + Number(run) } : { ...prevState.player9 },
                     player10: (playerName === "player10") ? { ...prevState.player10, runs: Number(prevState.player10.runs) + Number(run) } : { ...prevState.player10 }
                 }))
-                dispatch(incrementA(run));
+                dispatch(incrementB(run));
                 ballCounter();
-             
                 console.log(playerName + " switch : ", state[player].runs);
             }
             else
@@ -64,8 +61,7 @@ function TeamA(props) {
                     player10: (playerName === "player10") ? { ...prevState.player10, status: false } : { ...prevState.player10 }
                 }))
                 ballCounter();
-             
-                dispatch(wicketA());
+                dispatch(wicketB());
                 console.log(playerName + " status: ", state[player].status);
             }
             else
@@ -121,7 +117,7 @@ function TeamA(props) {
             default: return "Enter player name correctly";
 
         }
-        dispatch(stateA(state));
+        dispatch(stateB(state));
     }
 
     useEffect(() => {
@@ -146,4 +142,4 @@ function TeamA(props) {
 
 
 
-export default TeamA;
+export default TeamB;

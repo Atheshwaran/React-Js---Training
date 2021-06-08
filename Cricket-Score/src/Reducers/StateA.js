@@ -1,7 +1,7 @@
 const stateA = (state, action) => {
     switch (action.type) {
-        case "Update":
-            return { state: action.payload };
+        case "UpdateA":
+            return { state : action.payload };
         default:
             return stateA;
     }

@@ -1,4 +1,4 @@
-const score = (score = 0, action) => {
+const scoreB = (score = 0, action) => {
     switch (action.type) {
         case "Increment":
             return Number(score) + Number(action.run);
@@ -7,4 +7,4 @@ const score = (score = 0, action) => {
     }
 }
 
-export default score;
+export default scoreB;
