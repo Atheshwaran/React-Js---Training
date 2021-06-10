@@ -56,7 +56,7 @@ function Cricket() {
     //  const dispatch = useDispatch();
 
     const ballsCounterA = () => {
-        dispatch(ballA());
+       dispatch(ballA());
     }
 
     const ballsCounterB = () => {
@@ -72,7 +72,7 @@ function Cricket() {
         let i = 1;
         for (i; i <= over; i++) {
             arr.push((<><h1> Over No : {i} </h1>
-                <TeamA state={statea} change={setValueA} ballsCounter={() => ballsCounterA()} runrate = {runRateA} /> </>)
+                <TeamA state={statea} score = {scoreA} change={setValueA} ballsCounter={() => ballsCounterA()} runrate = {runRateA} /> </>)
 
             )
             statusA = false;
