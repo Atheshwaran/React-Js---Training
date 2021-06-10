@@ -7,6 +7,7 @@ function TeamA(props) {
     const dispatch = useDispatch();
 
     const state = props.state;
+    const score = props.score;
     const setValue = props.change;
     const ballCounter = props.ballsCounter;
     // let runRate = props.runrate;
@@ -41,9 +42,9 @@ function TeamA(props) {
                     player9: (playerName === "player9") ? { ...prevState.player9, runs: Number(prevState.player9.runs) + Number(run) } : { ...prevState.player9 },
                     player10: (playerName === "player10") ? { ...prevState.player10, runs: Number(prevState.player10.runs) + Number(run) } : { ...prevState.player10 }
                 }))
-                dispatch(incrementA(run));
+               
+                dispatch(incrementA(score, run));
                 ballCounter();
-             
                 console.log(playerName + " switch : ", state[player].runs);
             }
             else
@@ -64,7 +65,6 @@ function TeamA(props) {
                     player10: (playerName === "player10") ? { ...prevState.player10, status: false } : { ...prevState.player10 }
                 }))
                 ballCounter();
-             
                 dispatch(wicketA());
                 console.log(playerName + " status: ", state[player].status);
             }
