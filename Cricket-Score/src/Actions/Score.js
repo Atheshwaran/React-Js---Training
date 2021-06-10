@@ -1,5 +1,7 @@
-export const incrementA = (num) => {
-    return { type: "IncrementA", run: num };
+export const incrementA = (score, run) => {
+    const obj = {score, run}
+    console.log("obj = ");
+    return { type: "IncrementA", payload: obj };
 }
 
 export const wicketA = () => {
